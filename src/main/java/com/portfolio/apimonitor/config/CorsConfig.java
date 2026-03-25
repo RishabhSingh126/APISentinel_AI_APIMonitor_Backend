@@ -15,6 +15,8 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // Allow all endpoints
                         .allowedOrigins("http://localhost:5173") // Allow your React app
+                        .allowedOrigins("http://localhost:3000")
+                        .allowedOrigins("https://api-sentinel-ai-api-monitor-fronten.vercel.app")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Allow these HTTP methods
                         .allowedHeaders("*")
                         .allowCredentials(true);
