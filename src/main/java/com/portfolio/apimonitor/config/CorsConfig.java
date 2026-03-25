@@ -17,6 +17,7 @@ public class CorsConfig {
                         .allowedOrigins("http://localhost:5173") // Allow your React app
                         .allowedOrigins("http://localhost:3000")
                         .allowedOrigins("https://api-sentinel-ai-api-monitor-fronten.vercel.app")
+                        .allowedOrigins("http://122.176.70.200")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Allow these HTTP methods
                         .allowedHeaders("*")
                         .allowCredentials(true);
