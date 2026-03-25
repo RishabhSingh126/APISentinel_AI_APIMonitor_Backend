@@ -52,7 +52,8 @@ public class SecurityConfig {
         configuration.setAllowedOrigins(List.of(
                 "http://localhost:5173",
                 "http://localhost:3000",
-                "https://api-sentinel-ai-api-monitor-fronten.vercel.app"
+                "https://api-sentinel-ai-api-monitor-fronten.vercel.app",
+                "http://122.176.70.200"
         ));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));
