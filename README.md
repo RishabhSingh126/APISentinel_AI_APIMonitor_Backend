@@ -40,9 +40,3 @@ The system follows a strict Layered Architecture:
 * Java 17 JDK
 * Maven
 * MySQL Server 8.0 running locally on port `3306`
-
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/yourusername/api-sentinel-backend.git](https://github.com/yourusername/api-sentinel-backend.git)
-   cd api-sentinel-backend
