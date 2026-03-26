@@ -2,7 +2,7 @@
 
 This repository contains the high-performance Spring Boot engine that powers the API Sentinel platform. It features automated background scheduling, multithreaded HTTP pinging, advanced mathematical metric calculations (p95 latency), and AI-driven root cause analysis.
 
-## 🚀 Core Technology Stack
+## Core Technology Stack
 * **Language:** Java 17+
 * **Framework:** Spring Boot 3, Spring MVC, Spring Data JPA
 * **Database:** MySQL 8.0 (Hibernate ORM)
@@ -11,7 +11,7 @@ This repository contains the high-performance Spring Boot engine that powers the
 * **Networking:** Spring WebFlux / RestClient
 * **Deployment:** Docker containerized, hosted on Render
 
-## 🧠 The 13 Core System Features
+## The 13 Core System Features
 1. **Automated Health Checks:** `@Scheduled` cron jobs sending non-blocking HTTP requests every minute.
 2. **Uptime/Downtime Tracking:** Strict HTTP status code evaluation for success/failure logging.
 3. **Deep Latency Measurement:** Tracks precise millisecond response times.
@@ -26,7 +26,7 @@ This repository contains the high-performance Spring Boot engine that powers the
 12. **AI-Powered Root Cause Analysis:** Feeds the last 5 failed logs into an LLM (via Spring AI) to generate human-readable explanations and suggested fixes.
 13. **Chat With Your Logs:** An AI endpoint that allows users to ask plain-English questions about their historical API performance metrics.
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 The system follows a strict Layered Architecture:
 * `Controller`: Handles REST API routing and HTTP responses.
 * `Service`: Contains core business logic (`PingService`, `AlertService`, `AiService`, `CostService`).
@@ -34,7 +34,7 @@ The system follows a strict Layered Architecture:
 * `Security`: Manages JWT generation, validation filters, and CORS configurations.
 * `DTO`: Data Transfer Objects ensuring database entities are never exposed directly to the client.
 
-## 🛠️ Local Setup Instructions
+## Local Setup Instructions
 
 ### Prerequisites
 * Java 17 JDK
